@@ -28,8 +28,18 @@ for (let i=0; i<pronoun.length; i++){
         for (let k=0; k<noun.length; k++){
             for (let l=0; l<extension.length; l++){
                 console.log(`${pronoun[i]}${adj[j]}${noun[k]}${extension[l]}`);
+
+                //TO SHOW LIST OF MAILS ON WEBSITE
+
+                let visual = document.createElement('visual');
+                visual.innerText= `
+                    ${pronoun[i]}${adj[j]}${noun[k]}${extension[l]}
+                `
+                document.body.appendChild(visual);
             }
         }
     }
 }
+
+
 
